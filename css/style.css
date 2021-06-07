@@ -1,11 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Utils */
+
+body {
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
+
+.w-50 {
+    width: 50%;
+}
+
+.w-30 {
+    width: 33%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.bg-blue {
+    background-color: rgb(0, 97, 255);
+}
+
+.bg-lightblue {
+    background-color: rgb(180, 208, 231);
+}
+
+.white {
+    color: white;
+}
+
+/* Header */
