@@ -13,6 +13,10 @@ body {
     font-weight: 600;
 }
 
+img {
+    max-width: 100%;
+}
+
 .w-50 {
     width: 50%;
 }
@@ -47,6 +51,14 @@ body {
 
 .in-block {
     display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.f-left {
+    float: left;
 }
 
 .btn-blue {
@@ -96,6 +108,11 @@ body {
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-small{
+    max-width: 1138px;
     margin: 0 auto;
 }
 
@@ -235,7 +252,7 @@ body {
 }
 
 .page-2 {
-    height: 100vh;
+    height: 1500px;
     width: 100%;
     margin-top: 150px;
 }
@@ -247,6 +264,10 @@ body {
 
 .page-2 span {
     margin-right: 30px;
+}
+
+.header-col{
+    margin-left: 30px;
 }
 
 .colunms .colunm {
@@ -295,4 +316,65 @@ body {
 
 .fa-ul {
     margin: 25px;
+}
+
+.row {
+    height: 300px;
+    padding: 30px;
+}
+
+.row123 {
+    height: 100%;
+    border: 1px solid black;
+}
+
+.row123 .header-row123 {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.main-row123 {
+    height: 250px;
+    padding: 30px 25px;
+}
+
+.boxes {
+    height: 800px;
+    width: 100%;
+}
+
+.box-sx {
+    height: 100%;
+}
+
+.box-dx {
+    height: 100%;
+}
+
+.partner {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/partner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.page-3 .boxes article{
+    margin-top: 25%;
+    padding: 70px;
+}
+
+.page-3 .boxes article p{
+    line-height: 25px;
+}
+
+.btn-vuoto{
+    height: 15px;
+    line-height: 15px;
+    box-sizing: content-box;
+    padding: 5px 10px;
+    border: 1px solid black;
 }
