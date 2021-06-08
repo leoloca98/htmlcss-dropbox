@@ -9,7 +9,7 @@
 body {
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -17,8 +17,8 @@ body {
     width: 50%;
 }
 
-.w-30 {
-    width: 33%;
+.w-33 {
+    width: calc(100%/3);
 }
 
 .w-60 {
@@ -29,17 +29,57 @@ body {
     width: 40%;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.in-block {
+    display: inline-block;
+}
+
 .btn-blue {
     background-color: rgb(0, 97, 255);
+    box-sizing: content-box;
+    font-size: 13px;
+    text-align: center;
+}
+
+.btn-small {
     height: 17px;
     line-height: 17px;
-    vertical-align: middle;
-    box-sizing: content-box;
     padding: 6px 15px;
+}
+
+.btn-big {
+    padding: 10px 18px;
 }
 
 .size-13 {
     font-size: 13px;
+}
+
+.size-26 {
+    font-size: 26px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.indent {
+    text-align: left;
 }
 
 .bg-lightblue {
@@ -50,7 +90,11 @@ body {
     color: white;
 }
 
-.container{
+.gray {
+    color: gray;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -63,7 +107,7 @@ body {
 
 /* Header */
 
-header {
+.page {
     background-color: white;
     height: 100vh;
 }
@@ -129,6 +173,10 @@ header {
     color: black;
 }
 
+.main-menu .column-right a:hover {
+    text-decoration: underline;
+}
+
 .main-menu .column-right .btn-blue {
     color: white;
     text-decoration: none;
@@ -186,17 +234,66 @@ header {
     height: 550px;
 }
 
-.page-2{
+.page-2 {
     height: 100vh;
     width: 100%;
     margin-top: 150px;
 }
 
-.page-2 h2{
+.page-2 h2 {
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
-.page-2 span{
+.page-2 span {
     margin-right: 30px;
+}
+
+.colunms .colunm{
+    float: left;
+    height: 1050px;
+    padding: 10px;
+}
+
+.c123 {
+    height: 100%;
+    border: 1px solid black;
+    
+}
+
+.header-c123 {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.main-c123 {
+    padding: 30px 25px;
+}
+
+.article-top .fa-ul .fa-user {
+    font-weight: normal;
+}
+
+.main-c123 .article-top a {
+    text-decoration: none;
+    color: rgb(0, 97, 255);
+}
+
+.main-c123 .article-top div a:hover {
+    text-decoration: underline;
+}
+
+.mini-hr {
+    width: 70px;
+}
+
+.fa-check {
+    color: rgb(0, 97, 255);
+}
+
+.fa-ul {
+    margin: 25px;
 }
