@@ -249,16 +249,15 @@ body {
     margin-right: 30px;
 }
 
-.colunms .colunm{
+.colunms .colunm {
     float: left;
     height: 1050px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .c123 {
     height: 100%;
     border: 1px solid black;
-    
 }
 
 .header-c123 {
