@@ -33,6 +33,10 @@ img {
     width: 40%;
 }
 
+.mb-100{
+    margin-bottom: 100px;
+}
+
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -111,7 +115,7 @@ img {
     margin: 0 auto;
 }
 
-.container-small{
+.container-small {
     max-width: 1138px;
     margin: 0 auto;
 }
@@ -266,7 +270,7 @@ img {
     margin-right: 30px;
 }
 
-.header-col{
+.header-col {
     margin-left: 30px;
 }
 
@@ -359,22 +363,90 @@ img {
     background-image: url("../img/partner.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
 
-.page-3 .boxes article{
+.page-3 .boxes article {
     margin-top: 25%;
     padding: 70px;
 }
 
-.page-3 .boxes article p{
+.page-3 .boxes article p {
     line-height: 25px;
 }
 
-.btn-vuoto{
+.btn-vuoto {
     height: 15px;
     line-height: 15px;
     box-sizing: content-box;
     padding: 5px 10px;
     border: 1px solid black;
+}
+
+.page-4 h2 {
+    font-size: 40px;
+}
+
+.business {
+    height: 1100px;
+    width: 100%;
+}
+
+.business .bus-row {
+    height: calc(100% / 2 - 40px);
+}
+
+.business .bus-row .bus-col {
+    height: 100%;
+    width: calc(100% / 3);
+}
+
+.business .bus-row .bus-col .bus-img, .business .bus-row .bus-col .bus-img .bus-txt {
+    height: 50%;
+}
+
+.business .bus-row .bus-col .bus-img.switch {
+    background-image: url("../img/business-feature-switching-tools.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-img.coordinate {
+    background-image: url("../img/business-feature-coordinate-it.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-img.multi {
+    background-image: url("../img/business-feature-multi-device.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-img.integrations {
+    background-image: url("../img/business-feature-integrations-it.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-img.send-f {
+    background-image: url("../img/business-feature-send-files-it.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-img.security {
+    background-image: url("../img/business-feature-security.png");
+    background-position: center;
+    background-size: auto 240px;
+    background-repeat: no-repeat;
+}
+
+.business .bus-row .bus-col .bus-txt {
+    padding: 40px;
 }
