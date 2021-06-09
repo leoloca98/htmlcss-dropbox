@@ -510,7 +510,6 @@ img {
 .companies {
     width: 100%;
     height: calc(100vw / 3);
-    border: 1px solid black;
 }
 
 .companies .comp-col {
@@ -519,6 +518,7 @@ img {
 }
 
 .companies .comp-col .comp-logo {
+    position: relative;
     width: 50%;
     height: 50%;
 }
@@ -526,4 +526,12 @@ img {
 .companies .comp-col>.cream {
     height: 100%;
     width: 100%;
+}
+
+.companies .comp-logo .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
