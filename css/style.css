@@ -25,6 +25,12 @@ img {
     margin: 0 auto;
 }
 
+.container-big {
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
 .container-small {
     max-width: 1138px;
     height: 100%;
@@ -204,6 +210,10 @@ h2 {
 
 .bg-white {
     background-color: white;
+}
+
+.bg-black {
+    background-color: black;
 }
 
 /* COLORS */
@@ -597,7 +607,7 @@ img.central-logo {
 /* ***************Q & A ***************** */
 
 .page-6 {
-    height: 800px;
+    height: 600px;
 }
 
 .page-6 h3 {
@@ -618,6 +628,57 @@ img.central-logo {
     height: 100%;
 }
 
-.page-6 .question-row .question-content .fa-chevron-down{
+.page-6 .question-row .question-content .fa-chevron-down {
     font-size: 20px;
+}
+
+/* ***************FOOOTER************** */
+
+footer {
+    height: 500px;
+    font-size: 14px;
+}
+
+.footer-menu {
+    padding-top: 100px;
+}
+
+.row-menu {
+    height: 200px;
+    width: 100%;
+}
+
+.footer-nav {
+    height: 200px;
+    width: calc(100% / 5);
+}
+
+.footer-nav h3 {
+    font-size: 22px;
+}
+
+.footer-nav li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu>hr {
+    width: 7%;
+}
+
+.footer-menu>span {
+    color: grey;
+}
+
+.footer-menu .fa-globe-americas {
+    margin-right: 5px;
+}
+
+.footer-menu .fa-caret-up {
+    margin-left: 5px;
 }
