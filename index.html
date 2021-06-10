@@ -21,19 +21,22 @@
     <!-- Header -->
 
     <header>
-        <div class="page-1">
-            <div class="main-menu clearfix">
-                <div class="col column-left w-50 f-left">
+        <div id="header">
+            <!-- Top-bar -->
+            <div class="top-bar clearfix">
+                <!-- Left Colunm -->
+                <div class="w-50 f-left">
                     <nav>
                         <ul>
-                            <li><img id="logo" src="./img/logo-small.png" alt="Dropbox"></li>
+                            <li id="logo"><a href="#"><img src="./img/logo-small.png" alt="Dropbox"></a></li>
                             <li><a href="#">Perchè Dropbox?</a></li>
                             <li><a href="#">Funzioni</a></li>
                             <li><a href="#">Piani e Prezzi</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col column-right w-50 f-left">
+                <!-- Right Colunm -->
+                <div class="w-50 right f-left">
                     <nav>
                         <ul>
                             <li><a href="#">Supporto</a></li>
@@ -48,11 +51,11 @@
             <!-- Jumbotron -->
             <div class="jumbotron lightblue">
                 <div class="container-big clearfix">
-                    <div class="menu-jumbo">
-                        <div class="row-jumbo">
+                    <div class="layout-jumbo">
+                        <div class="title-jumbo">
                             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                         </div>
-                        <div class="col-left f-left">
+                        <div class="info-jumbo f-left">
                             <p class="mb-20">Finalmente tutti i tuoi strumenti, contunuti e collaboratori sono
                                 accessibili
                                 dallo stesso
@@ -70,20 +73,19 @@
 
                         <!--Jumbo Img -->
                         <picture class="f-left ml-100">
-                            <img id="jumbo" src="./img/jumbo.png" alt="">
+                            <img class="img-jumbo" src="./img/jumbo.png" alt="">
                         </picture>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
     <!-- Main -->
     <main>
         <div class="container">
-            <section class="page-2">
-                <header class=" header-col mb-30">
+            <section id="plans">
+                <header class="title-plans mb-30">
                     <h2>Trova il piano Dropbox che fa per te</h2>
                     <span>
                         <input type="radio" value="Fatturanzione Mensile">
@@ -94,12 +96,12 @@
                         <label for="male">Fatturazione Annuale</label>
                     </span>
                 </header>
-                <div class="colunms clearfix">
+                <div class="layout-col-plans clearfix">
                     <!-- First Column -->
-                    <div class="colunm w-33">
-                        <div class="c123">
-                            <header class="header-c123"><i class="fas fa-user"></i> Singolo</header>
-                            <main class="main-c123">
+                    <div class="col-plans w-33">
+                        <div class="colunm">
+                            <header class="header-colunm"><i class="fas fa-user"></i> Singolo</header>
+                            <main class="main-colunm">
                                 <h3 class="bold size-26 mb-20">Professional</h3>
                                 <article class="article-top mb-30">
                                     <div class="bold mb-10">19.99 &euro;</div>
@@ -141,15 +143,16 @@
                             </main>
                         </div>
                     </div>
-                    <!-- Second Column -->
-                    <div class="colunm w-33">
-                        <div class="c123">
-                            <header class="header-c123"><i class="far fa-building"></i></i> Team</header>
-                            <main class="main-c123">
+
+                    <!-- Second Colunm -->
+                    <div class="col-plans w-33">
+                        <div class="colunm">
+                            <header class="header-colunm"><i class="fas fa-user"></i> Singolo</header>
+                            <main class="main-colunm">
                                 <h3 class="bold size-26 mb-20">Standard</h3>
                                 <article class="article-top mb-30">
                                     <div class="bold mb-10">19.99 &euro;</div>
-                                    <div class="gray mb-50"><i>/mese/utente, a partire da 3 utenti</i></div>
+                                    <div class="gray mb-50"><i>/utente/mese, a partire da 3 utenti</i></div>
                                     <ul class="fa-ul">
                                         <li class="mb-20"><span class="fa-li"><i class="fas fa-user-plus"></i></span> 1
                                             utente</li>
@@ -187,19 +190,19 @@
                                             chat</li>
                                     </ul>
                                 </article>
-
                             </main>
                         </div>
                     </div>
-                    <!-- Third Column -->
-                    <div class="colunm w-33">
-                        <div class="c123">
-                            <header class="header-c123"><i class="far fa-building"></i> Team</header>
-                            <main class="main-c123">
-                                <h3 class="bold size-26 mb-20">Advanced</h3>
+
+                    <!-- Third Colunm -->
+                    <div class="col-plans w-33">
+                        <div class="colunm">
+                            <header class="header-colunm"><i class="fas fa-user"></i> Singolo</header>
+                            <main class="main-colunm">
+                                <h3 class="bold size-26 mb-20">Professional</h3>
                                 <article class="article-top mb-30">
                                     <div class="bold mb-10">19.99 &euro;</div>
-                                    <div class="gray mb-50"><i>/mese</i></div>
+                                    <div class="gray mb-50"><i>/utente/mese, a partire da 3 utenti</i></div>
                                     <ul class="fa-ul">
                                         <li class="mb-20"><span class="fa-li"><i class="fas fa-user-plus"></i></span> 1
                                             utente</li>
@@ -243,10 +246,10 @@
                 </div>
 
                 <!-- Row Bar -->
-                <div class="row">
-                    <div class="row123">
-                        <header class="header-row123"><i class="far fa-building"></i> Team</header>
-                        <main class="main-row123 clearfix">
+                <div class="layout-rowbar-plans">
+                    <div class="rowbar-plans">
+                        <header class="header-rowbar-plans"><i class="far fa-building"></i> Team</header>
+                        <main class="main-rowbar-plans clearfix">
                             <div class="w-80 f-left">
                                 <h3 class="mb-20 bold size-26">Enterprise</h3>
                                 <span class="mb-30 bold block">Contatta l'ufficio vendite per i prezzi</span>
@@ -265,13 +268,15 @@
 
 
         <div class="container-small">
-            <!-- Page 3 -->
-            <section class="page-3">
-                <div class="boxes">
-                    <div class="box-sx w-50 f-left">
-                        <div class="partner"></div>
+            <!-- PARTNER -->
+            <section id="partner">
+                <div class="layout-box">
+                    <!-- Left Box -->
+                    <div class="box w-50 f-left">
+                        <div class="img-partner"></div>
                     </div>
-                    <div class="box-dx w-50 f-left">
+                    <!-- Right Box -->
+                    <div class="box w-50 f-left">
                         <article>
                             <h3 class="bold size-26 mb-30">Entra in contatto con un partner Dropbox</h3>
                             <p class="mb-50">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i
@@ -284,10 +289,10 @@
                 </div>
             </section>
 
-            <!-- Page 4 -->
-            <section class="page-4 mb-50">
+            <!-- BUSINESS -->
+            <section id="business" class="mb-50">
                 <h2 class=" mb-50 bold">Esegui più operazioni con Dropbox Business</h2>
-                <div class="business mb-100">
+                <div class="bus-layout mb-100">
                     <div class="bus-row clearfix mb-70">
                         <div class="bus-col f-left">
                             <div class="bus-img switch"></div>
@@ -351,26 +356,27 @@
                 <a href="#">Scopri di più sui nostri clienti</a>
             </section>
         </div>
-        <!-- Page 5 -->
-        <section class="page-5 mb-100">
-            <div class="companies clearfix">
+
+        <!-- COMPANIES -->
+        <section id="companies" class="mb-100">
+            <div class="comp-layout clearfix">
                 <div class="comp-col f-left clearfix">
-                    <div class="comp-logo green f-left">
-                        <img class="logo" src="./img/designit.svg" alt="Designit logo">
+                    <div class="comp-bg green f-left">
+                        <img class="comp-logo" src="./img/designit.svg" alt="Designit logo">
                     </div>
-                    <div class="comp-logo brick f-left">
-                        <img class="logo" src="./img/arizona_state_university.svg" alt="Arizona state university logo">
+                    <div class="comp-bg brick f-left">
+                        <img class="comp-logo" src="./img/arizona_state_university.svg" alt="Arizona state university logo">
                     </div>
-                    <div class="comp-logo blue f-left">
-                        <img class="logo" src="./img/university_of_florida.svg" alt="University of Florida logo">
+                    <div class="comp-bg blue f-left">
+                        <img class="comp-logo" src="./img/university_of_florida.svg" alt="University of Florida logo">
                     </div>
-                    <div class="comp-logo light-red f-left">
-                        <img class="logo" src="./img/topps.svg" alt="Topps logo">
+                    <div class="comp-bg light-red f-left">
+                        <img class="comp-logo" src="./img/topps.svg" alt="Topps logo">
                     </div>
                 </div>
                 <div class="comp-col f-left clearfix">
                     <div class="cream f-left">
-                        <img class="central-logo mb-10" src="./img/designit.svg" alt="Designit logo">
+                        <img class="comp-central-logo mb-10" src="./img/designit.svg" alt="Designit logo">
                         <hr class="mini-hr mb-50">
                         <p class="mb-50">"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici
                             diversi. Ora
@@ -382,21 +388,21 @@
                     </div>
                 </div>
                 <div class="comp-col f-left clearfix">
-                    <div class="comp-logo darkred f-left">
-                        <img class="logo" src="./img/world_bicycle_relief.svg" alt="World bicycle relief logo">
+                    <div class="comp-bg darkred f-left">
+                        <img class="comp-logo" src="./img/world_bicycle_relief.svg" alt="World bicycle relief logo">
                     </div>
-                    <div class="comp-logo lightblue f-left">
-                        <img class="logo" src="./img/hearst_corp.svg" alt="Hearst Comp logo">
+                    <div class="comp-bg lightblue f-left">
+                        <img class="comp-logo" src="./img/hearst_corp.svg" alt="Hearst Comp logo">
                     </div>
-                    <div class="comp-logo darkblue f-left">
-                        <img class="logo" src="./img/lonely_planet.svg" alt="Lonely Planet logo">
+                    <div class="comp-bg darkblue f-left">
+                        <img class="comp-logo" src="./img/lonely_planet.svg" alt="Lonely Planet logo">
                     </div>
-                    <div class="comp-logo ocrat f-left">
-                        <img class="logo" src="./img/clear_channel.svg" alt="Clear Channel logo">
+                    <div class="comp-bg ocrat f-left">
+                        <img class="comp-logo" src="./img/clear_channel.svg" alt="Clear Channel logo">
                     </div>
                 </div>
             </div>
-            <div class="spam lightblue ">
+            <div class="comp-rowbar lightblue ">
                 <div class="container-small">
                     <div class="w-60 f-left">
                         <h2 class="bold mb-30 magenta">Porta Dropbox Business <br>nella tua azienda</h2>
@@ -409,11 +415,11 @@
         </section>
 
         <!-- Q&A -->
-        <section class="page-6">
+        <section id="Questions">
             <div class="container-small">
                 <h3 class="bold mb-50">Domande Frequenti</h3>
-                <div class="question-row">
-                    <div class="question-content clearfix">
+                <div class="quest-rowbar">
+                    <div class="quest-content clearfix">
                         <span class="bold w-90 f-left">Qual è la differenza tra Dropbox Business Standard e DropBox
                             Business
                             Advanced?
@@ -421,8 +427,8 @@
                         <span class="w-10 f-left"><i class="fas fa-chevron-down"></i></span>
                     </div>
                 </div>
-                <div class="question-row">
-                    <div class="question-content clearfix">
+                <div class="quest-rowbar">
+                    <div class="quest-content clearfix">
                         <span class="bold w-90 f-left">Qual è la differenza tra Dropbox Business Standard e DropBox
                             Business
                             Advanced?
@@ -430,8 +436,8 @@
                         <span class="w-10 f-left"><i class="fas fa-chevron-down"></i></span>
                     </div>
                 </div>
-                <div class="question-row">
-                    <div class="question-content clearfix">
+                <div class="quest-rowbar">
+                    <div class="quest-content clearfix">
                         <span class="bold w-90 f-left">Qual è la differenza tra Dropbox Business Standard e DropBox
                             Business
                             Advanced?
@@ -439,8 +445,8 @@
                         <span class="w-10 f-left"><i class="fas fa-chevron-down"></i></span>
                     </div>
                 </div>
-                <div class="question-row">
-                    <div class="question-content clearfix">
+                <div class="quest-rowbar">
+                    <div class="quest-content clearfix">
                         <span class="bold w-90 f-left">Qual è la differenza tra Dropbox Business Standard e DropBox
                             Business
                             Advanced?
@@ -448,15 +454,15 @@
                         <span class="w-10 f-left"><i class="fas fa-chevron-down"></i></span>
                     </div>
                 </div>
-                <div class="question-row"></div>
+                <div class="quest-rowbar"></div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black white">
+    <footer id="footer" class="bg-black white">
         <div class="footer-menu container-big clearfix">
-            <div class="row-menu mb-100">
+            <div class="footer-layout-menu mb-100">
                 <div class="footer-nav f-left">
                     <h3 class="bold mb-20">Dropbox</h3>
                     <ul>

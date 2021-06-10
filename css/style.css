@@ -99,9 +99,10 @@ img {
     margin-bottom: 10px;
 }
 
-.ml-100{
+.ml-100 {
     margin-left: 100px;
 }
+
 /* DISPLAY */
 
 .in-block {
@@ -236,158 +237,122 @@ h2 {
     color: rgb(0, 97, 255);
 }
 
-/* *************HEADER************* */
+/* *************       HEADER      ************* */
 
-.page-1 {
-    height: 100vh;
-}
-
-.main-menu {
+.top-bar {
     position: fixed;
+    z-index: 1;
     height: 90px;
     width: 100%;
-    background-color: white;
-}
-
-.col {
-    height: 90px;
     line-height: 90px;
+    background-color: white;
 }
 
 /* Left Column */
 
-.column-left {
-    text-align: left;
-}
-
-.main-menu .column-left a, .main-menu .column-left ul, .main-menu .column-left li {
+.top-bar a, .top-bar ul, .top-bar li {
     list-style-type: none;
     display: inline-block;
 }
 
-.main-menu .column-left li {
+.top-bar li {
     margin: 0 20px;
 }
 
-.main-menu .column-left li:first-child {
+.top-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+#logo {
     line-height: 25px;
     vertical-align: middle;
 }
 
-.main-menu .column-left a {
-    color: black;
-    text-decoration: none;
-}
-
-.main-menu .column-left a:hover {
-    text-decoration: underline;
-}
-
 /* Right Column */
 
-.column-right {
-    text-align: right;
-}
-
-.main-menu .column-right a, .main-menu .column-right ul, .main-menu .column-right li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.main-menu .column-right li {
-    margin: 0 20px;
-}
-
-.main-menu .column-right a {
-    text-decoration: none;
-    color: black;
-}
-
-.main-menu .column-right a:hover {
-    text-decoration: underline;
-}
-
-.main-menu .column-right .btn-blue {
+.top-bar .btn-blue {
     color: white;
-    text-decoration: none;
 }
 
-/* *************JUMBOTRON************* */
+/* *************    JUMBOTRON     ************* */
 
 .jumbotron {
     height: 900px;
     width: 100%;
 }
 
-.jumbotron .menu-jumbo{
+.jumbotron .layout-jumbo {
     height: 100%;
     padding-top: 150px;
 }
 
-.jumbotron .row-jumbo {
+.jumbotron .title-jumbo {
     height: 275px;
 }
 
-.jumbotron .row-jumbo h1 {
+.jumbotron .title-jumbo h1 {
     font-size: 85px;
 }
 
-.col-left {
+.info-jumbo {
     height: 350px;
     width: 410px;
 }
 
-.col-left span {
+.info-jumbo span {
     line-height: 80px;
 }
 
-.col-left span a {
+.info-jumbo span a {
     color: white;
     text-decoration: none;
 }
 
-.col-left span i {
+.info-jumbo span i {
     font-size: 45px;
 }
 
-#jumbo {
-    left: 37%;
-    top: 42%;
+.layout-jumbo .img-jumbo {
     height: 550px;
 }
 
-/* *************PAGE 2************* */
+/* *************   PLANS    ************* */
 
-.page-2 {
+#plans {
     height: 1500px;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
-.page-2 h2 {
+.title-plans h2 {
     margin-bottom: 60px;
 }
 
-.page-2 span {
+.title-plans span {
     margin-right: 30px;
 }
 
-.header-col {
+.title-plans {
     margin-left: 30px;
 }
 
-.colunms .colunm {
+.layout-col-plans .col-plans {
     float: left;
     height: 1200px;
     padding: 30px;
 }
 
-.c123 {
+.colunm {
     height: 100%;
     border: 1px solid black;
 }
 
-.header-c123 {
+.header-colunm {
     height: 50px;
     line-height: 50px;
     width: 100%;
@@ -395,7 +360,7 @@ h2 {
     text-align: center;
 }
 
-.main-c123 {
+.main-colunm {
     padding: 30px 25px;
 }
 
@@ -403,12 +368,12 @@ h2 {
     font-weight: normal;
 }
 
-.main-c123 .article-top a {
+.main-colunm .article-top a {
     text-decoration: none;
     color: rgb(0, 97, 255);
 }
 
-.main-c123 .article-top div a:hover {
+.main-colunm .article-top div a:hover {
     text-decoration: underline;
 }
 
@@ -424,42 +389,40 @@ h2 {
     margin: 25px;
 }
 
-.row {
+.layout-rowbar-plans {
     height: 300px;
     padding: 30px;
 }
 
-.row123 {
+.rowbar-plans {
     height: 100%;
     border: 1px solid black;
 }
 
-.row123 .header-row123 {
+.rowbar-plans .header-rowbar-plans {
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid black;
     text-align: center;
 }
 
-.main-row123 {
+.main-rowbar-plans {
     height: 250px;
     padding: 30px 25px;
 }
 
-.boxes {
+/* ***************** PARTNER **************** */
+
+.layout-box {
     height: 800px;
     width: 100%;
 }
 
-.box-sx {
+.box {
     height: 100%;
 }
 
-.box-dx {
-    height: 100%;
-}
-
-.partner {
+.img-partner {
     height: 100%;
     width: 100%;
     background-image: url("../img/partner.png");
@@ -468,103 +431,103 @@ h2 {
     background-position: center;
 }
 
-.page-3 .boxes article {
+.layout-box article {
     margin-top: 25%;
     padding: 70px;
 }
 
-.page-3 .boxes article p {
+.layout-box .box p {
     line-height: 25px;
 }
 
-.page-3 .boxes .box-dx .btn-vuoto {
+.layout-box .box .btn-vuoto {
     padding: 5px 10px;
     border: 1px solid black;
 }
 
 /* *************BUSINESS************* */
 
-.business {
+.bus-layout {
     height: 1100px;
     width: 100%;
 }
 
-.business .bus-row {
+.bus-layout .bus-row {
     height: calc(100% / 2 - 40px);
 }
 
-.business .bus-row .bus-col {
+.bus-layout .bus-row .bus-col {
     height: 100%;
     width: calc(100% / 3);
 }
 
-.business .bus-row .bus-col .bus-img, .business .bus-row .bus-col .bus-img .bus-txt {
+.bus-layout .bus-row .bus-col .bus-img, .bus-layout .bus-row .bus-col .bus-img .bus-txt {
     height: 50%;
 }
 
-.business .bus-row .bus-col .bus-img {
+.bus-layout .bus-row .bus-col .bus-img {
     background-position: left;
     background-size: auto 250px;
     background-repeat: no-repeat;
 }
 
-.business .bus-row .bus-col .bus-img.switch {
+.bus-layout .bus-row .bus-col .bus-img.switch {
     background-image: url("../img/business-feature-switching-tools.png");
 }
 
-.business .bus-row .bus-col .bus-img.coordinate {
+.bus-layout .bus-row .bus-col .bus-img.coordinate {
     background-image: url("../img/business-feature-coordinate-it.png");
 }
 
-.business .bus-row .bus-col .bus-img.multi {
+.bus-layout .bus-row .bus-col .bus-img.multi {
     background-image: url("../img/business-feature-multi-device.png");
 }
 
-.business .bus-row .bus-col .bus-img.integrations {
+.bus-layout .bus-row .bus-col .bus-img.integrations {
     background-image: url("../img/business-feature-integrations-it.png");
 }
 
-.business .bus-row .bus-col .bus-img.send-f {
+.bus-layout .bus-row .bus-col .bus-img.send-f {
     background-image: url("../img/business-feature-send-files-it.png");
 }
 
-.business .bus-row .bus-col .bus-img.security {
+.bus-layout .bus-row .bus-col .bus-img.security {
     background-image: url("../img/business-feature-security.png");
 }
 
-.business .bus-row .bus-col .bus-txt {
+.bus-layout .bus-row .bus-col .bus-txt {
     padding-right: 40px;
 }
 
-.page-4>a {
+#business>a {
     color: rgb(0, 97, 255);
 }
 
 /* *************COMPANIES************* */
 
-.companies {
+.comp-layout {
     width: 100%;
     height: calc(100vw / 3);
 }
 
-.companies .comp-col {
+.comp-layout .comp-col {
     width: calc(100% / 3);
     height: calc(100vw / 3);
 }
 
-.companies .comp-col .comp-logo {
+.comp-layout .comp-col .comp-bg {
     position: relative;
     width: 50%;
     height: 50%;
 }
 
-.companies .comp-col>.cream {
+.comp-layout .comp-col>.cream {
     padding: 5% 10%;
     height: 100%;
     width: 100%;
 }
 
-.companies .comp-logo .logo {
+.comp-layout .comp-bg .comp-logo {
     height: auto;
     max-width: 50%;
     position: absolute;
@@ -574,60 +537,60 @@ h2 {
     filter: invert(1);
 }
 
-img.central-logo {
+img.comp-central-logo {
     height: 100px;
     max-width: 30%;
 }
 
-.page-5>.spam {
+.comp-rowbar {
     height: 300px;
 }
 
-.page-5 .spam .w-60 {
+.comp-rowbar .w-60 {
     margin-top: 95px;
     height: calc(100% - 95px);
 }
 
-.page-5 .spam .w-40 {
+.comp-rowbar .w-40 {
     margin-top: 115px;
     height: calc(100% - 115px);
 }
 
-.page-5 .spam .w-40 span.btn-small {
+.comp-rowbar .w-40 span.btn-small {
     padding: 10px 70px;
 }
 
 /* ***************Q & A ***************** */
 
-.page-6 {
+#questions {
     height: 600px;
 }
 
-.page-6 h3 {
+#questions .h3 {
     font-size: 32px;
 }
 
-.page-6 .question-row {
+.quest-rowbar {
     width: 100%;
     height: 100px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.page-6 .question-row .question-content {
+.quest-rowbar .quest-content {
     line-height: 100px;
 }
 
-.page-6 .question-row .question-content .w-90, .page-6 .question-row .question-content .w-10 {
+.quest-rowbar .quest-content .w-90, .quest-rowbar .quest-content .w-10 {
     height: 100%;
 }
 
-.page-6 .question-row .question-content .fa-chevron-down {
+.quest-rowbar .quest-content .fa-chevron-down {
     font-size: 20px;
 }
 
 /* ***************FOOOTER************** */
 
-footer {
+#footer {
     height: 500px;
     font-size: 14px;
 }
@@ -636,7 +599,7 @@ footer {
     padding-top: 100px;
 }
 
-.row-menu {
+.footer-layout-menu {
     height: 200px;
     width: 100%;
 }
