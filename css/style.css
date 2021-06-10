@@ -99,6 +99,9 @@ img {
     margin-bottom: 10px;
 }
 
+.ml-100{
+    margin-left: 100px;
+}
 /* DISPLAY */
 
 .in-block {
@@ -120,7 +123,6 @@ img {
 .btn-blue {
     background-color: rgb(0, 97, 255);
     box-sizing: content-box;
-    font-size: 13px;
     text-align: center;
 }
 
@@ -236,16 +238,15 @@ h2 {
 
 /* *************HEADER************* */
 
-.page {
-    background-color: white;
+.page-1 {
     height: 100vh;
 }
 
 .main-menu {
-    position: relative;
+    position: fixed;
     height: 90px;
     width: 100%;
-    display: inline-flex;
+    background-color: white;
 }
 
 .col {
@@ -314,33 +315,26 @@ h2 {
 /* *************JUMBOTRON************* */
 
 .jumbotron {
-    position: relative;
-    height: 88vh;
+    height: 900px;
     width: 100%;
 }
 
-.jumbotron .row {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 80%;
-    height: 250px;
+.jumbotron .menu-jumbo{
+    height: 100%;
+    padding-top: 150px;
 }
 
-.jumbotron .row h1 {
+.jumbotron .row-jumbo {
+    height: 275px;
+}
+
+.jumbotron .row-jumbo h1 {
     font-size: 85px;
 }
 
-.jumbotron .col-left p {
-    margin-bottom: 20px;
-}
-
 .col-left {
-    position: absolute;
-    top: 50%;
-    left: 10%;
     height: 350px;
-    width: 400px;
+    width: 410px;
 }
 
 .col-left span {
@@ -357,7 +351,6 @@ h2 {
 }
 
 #jumbo {
-    position: absolute;
     left: 37%;
     top: 42%;
     height: 550px;
